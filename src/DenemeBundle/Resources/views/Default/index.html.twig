@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Autocomplete - Default functionality</title>
+    <link rel="stylesheet" href="{{ asset("bundles/jquery-ui-1.11.4/jquery-ui.css") }}">
+
+    <script src="{{ asset('bundles/jquery-ui-1.11.4/external/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('bundles/jquery-ui-1.11.4/jquery-ui.js') }}"></script>
+
+    <script>
+
+        $(function() {
+            var dizi=[];
+            var i=0;
+            {% for d in dizi %}
+                dizi.push("{{ d }}");
+
+            {% endfor %}
+            $( "#tags" ).autocomplete({
+
+                source: dizi
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+<div class="ui-widget">
+    <label for="tags">Tags: </label>
+    <input id="tags"  >
+</div>
+
+
+</body>
+</html>

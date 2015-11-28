@@ -1,0 +1,7 @@
+deneme_homepage:
+    path:     /hello/
+    defaults: { _controller: DenemeBundle:Default:index }
+
+getir:
+  path: /getir/
+  defaults: { _controller: DenemeBundle:Default:getir}
