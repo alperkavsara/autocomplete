@@ -17,6 +17,7 @@ class DefaultController extends Controller
         array_push($dizi,"deli");
         array_push($dizi,"elma");
         array_push($dizi,"kiraz");
+        array_push($dizi,"armut");
         return $this->render('DenemeBundle:Default:index.html.twig', array('dizi'=>$dizi));
     }
 
